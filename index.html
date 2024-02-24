@@ -27,11 +27,10 @@
 
         label {
            font-size: 20px;
-          display: block;
             margin-bottom: 15px;
         }
 
-        select, button {
+        select, button{
             font-size: 17px;
             font-family: 'Tahoma';
             display: block;
@@ -72,6 +71,22 @@
             color: #000;
             border: 2px solid #FFC40C;
         }
+
+        /* Style for checkboxes */
+        .checkbox-container {
+            margin-top: 20px;
+        }
+
+        .checkbox-container label {
+            display: block;
+            margin-bottom: 10px;
+    
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            margin-right: 10px;
+          
+        }
     </style>
 </head>
 <body>
@@ -79,13 +94,26 @@
         <h1>Welcome to the VocabiPy application!</h1>
         <label for="menu">Choose an option:</label>
         <select id="menu">
-            <option value="1"> Add one or more terms with their definitions.</option>
-            <option value="2">Add a definition to an existing term</option>
-            <option value="3">Search for the definition of a term</option>
-            <option value="4">Delete a term</option>
-            <option value="5">Save and exit</option>
+            <option value="1"> Add a single term</option>
+            <option value="2"> Add a list of terms</option>
+            <option value="3">Delete a term</option>
+            <option value="4">Search for the definition of a term</option>
+            <option value="5">Save changes to Excel file</option>
+            <option value="6">Creating charts</option>
+            <option value="7">Calculate quantitative characteristics of the dictionary</option>
         </select>
-        <button id="submitButton">Submit</button>
-    </div>
+        <div class="checkbox-container">
+           <label for="checkbox">Choose a graph: </label>
+     
+            <input type="checkbox" value="option1"> Display Definition Length Histogram <br>
+            <input type="checkbox" value="option2"> Display Top 20 Words Graph <br>
+            <input type="checkbox" value="option3"> Display Word Cloud of Definitions <br>
+            <input type="checkbox" value="option4"> Display Bar Graph <br>
+          <br>
+
+         <br>
+          <button id="submitButton">Submit</button>
 </body>
 </html>
+
+
