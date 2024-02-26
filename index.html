@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Menu</title>
@@ -65,13 +68,28 @@
             border: 4px solid #FFC40C;
             color: #FFC40C;
         }
-
+    
         button:active {
             background-color: #ffffff;
             color: #000;
             border: 2px solid #FFC40C;
         }
 
+        .excelButton {
+            background-color: #4CAF50; /* Excel Green */
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px; /* Smaller padding for a more compact button */
+            font-size: 14px; /* Smaller font size for the text */
+            margin-top: 5px; /* Slightly reduce the top margin */
+            border-radius: 5px; /* Match the border radius with other buttons */
+            display: inline-block; /* Make the button inline to occupy less space */
+        }
+
+        .excelButton:hover {
+            background-color: #367B35;
+        }
         /* Style for checkboxes */
         .checkbox-container {
             margin-top: 20px;
@@ -98,7 +116,7 @@
             <option value="2"> Add a list of terms</option>
             <option value="3">Delete a term</option>
             <option value="4">Search for the definition of a term</option>
-            <option value="5">Creating charts</option>
+  
             <option value="6">Calculate quantitative characteristics of the dictionary</option>
         </select>
         <div class="checkbox-container">
@@ -111,7 +129,7 @@
           <br>
 
          <br>
-          <button id="submitButton">Save changes to Excel file</button>
+          <button id="submitButton">Submit</button>
+          <button class="excelButton">Save & Export to Excel</button>
 </body>
 </html>
-
